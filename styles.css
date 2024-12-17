@@ -1,0 +1,114 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.choice-btn.rock {
+    background-color: #7c8ce0;
+}
+
+.choice-btn.paper {
+    background-color: #4ecdc4;
+}
+
+.choice-btn.scissors {
+    background-color: #45b7d1;
+}
+
+.choice-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+#result-display {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.score-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.score-box {
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 5px;
+    min-width: 100px;
+}
+
+.score-box.human {
+    border-color: #9b59b6;  /* Purple color */
+}
+
+.score-box.computer {
+    border-color: #e67e22;  /* Orange color */
+}
+
+.score-box p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.choice-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px;
+}
+
+.choice-btn {
+    min-width: 120px;
+    font-size: 18px;
+}
+
+.result-text {
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.computer-choice {
+    color: #e67e22;  /* Matching computer's border color */
+    font-weight: bold;
+}
+
+.game-result {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 12px;
+    margin: 15px 0;
+}
+
+.game-result.win {
+    background-color: #d5f5e3;
+    color: #27ae60;
+}
+
+.game-result.lose {
+    background-color: #fadbd8;
+    color: #c0392b;
+}
+
+.game-result.tie {
+    background-color: #eaecee;
+    color: #7f8c8d;
+} 

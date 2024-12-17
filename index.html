@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Rock Paper Scissors</h1>
+    <div class="score-display">
+        <div class="score-box human">
+            <h3>You 👤</h3>
+            <p id="human-score">0</p>
+        </div>
+        <div class="score-box computer">
+            <h3>Computer 🤖</h3>
+            <p id="computer-score">0</p>
+        </div>
+    </div>
+    <div class="choice-buttons">
+        <button onclick="playGame('rock')" class="choice-btn rock">
+            Rock ✊
+        </button>
+        <button onclick="playGame('paper')" class="choice-btn paper">
+            Paper ✋
+        </button>
+        <button onclick="playGame('scissors')" class="choice-btn scissors">
+            Scissors ✌️
+        </button>
+    </div>
+    <div id="result-display"></div>
     <script src="script.js"></script>
 </body>
 </html>
