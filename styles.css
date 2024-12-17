@@ -1,45 +1,22 @@
+/* General styles */
 body {
     text-align: center;
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
+/* Base button styles */
 button {
     padding: 10px 20px;
     font-size: 16px;
-    margin: 20px;
+    margin: 10px;
     cursor: pointer;
     color: white;
     border: none;
     border-radius: 5px;
 }
 
-.choice-btn.rock {
-    background-color: #7c8ce0;
-}
-
-.choice-btn.paper {
-    background-color: #4ecdc4;
-}
-
-.choice-btn.scissors {
-    background-color: #45b7d1;
-}
-
-.choice-btn:hover {
-    transform: scale(1.05);
-    transition: transform 0.2s ease;
-}
-
-#result-display {
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    max-width: 500px;
-    margin: 20px auto;
-}
-
+/* Score display section */
 .score-display {
     display: flex;
     justify-content: center;
@@ -68,16 +45,58 @@ button {
     margin: 10px 0;
 }
 
+/* Game buttons section */
 .choice-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 20px;
+    gap: 15px;
+    margin: 10px;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .choice-btn {
-    min-width: 120px;
+    min-width: 150px;
     font-size: 18px;
+    padding: 15px 25px;
+}
+
+/* Button color variants */
+.choice-btn.rock {
+    background-color: #7c8ce0;
+}
+
+.choice-btn.paper {
+    background-color: #4ecdc4;
+}
+
+.choice-btn.scissors {
+    background-color: #45b7d1;
+}
+
+.choice-btn.lizard {
+    background-color: #90EE90;
+}
+
+.choice-btn.spock {
+    background-color: #87CEEB;
+}
+
+/* Button hover effect */
+.choice-btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+/* Result display section */
+#result-display {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 500px;
 }
 
 .result-text {
@@ -86,11 +105,17 @@ button {
     border-radius: 4px;
 }
 
-.computer-choice {
-    color: #e67e22;  /* Matching computer's border color */
+.human-choice {
+    color: #9b59b6;
     font-weight: bold;
 }
 
+.computer-choice {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Game result styles */
 .game-result {
     font-size: 1.2em;
     font-weight: bold;
@@ -111,4 +136,4 @@ button {
 .game-result.tie {
     background-color: #eaecee;
     color: #7f8c8d;
-} 
+}
